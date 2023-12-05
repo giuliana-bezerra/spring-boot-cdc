@@ -1,0 +1,12 @@
+{
+  "name": "postgres-connector-sink",
+  "config": {
+    "name": "postgres-connector-sink",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "connection.url": "jdbc:postgresql://postgres:5432/posts_db",
+    "connection.user": "user",
+    "connection.password": "123456",
+    "topics": "mysql.comments_db.comments",
+    "table.name.format": "comments"
+  }
+}
